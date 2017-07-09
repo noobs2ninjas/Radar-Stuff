@@ -20,6 +20,7 @@
 		B98924161F11D3170017DD40 /* example2.kml in Resources */ = {isa = PBXBuildFile; fileRef = B98924151F11D3170017DD40 /* example2.kml */; };
 		B98924181F11D5F90017DD40 /* KMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98924171F11D5F90017DD40 /* KMLParser.swift */; };
 		B989241A1F11ECE90017DD40 /* example3.kml in Resources */ = {isa = PBXBuildFile; fileRef = B98924191F11ECE90017DD40 /* example3.kml */; };
+		B989241C1F11F3620017DD40 /* GoogleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B989241B1F11F3620017DD40 /* GoogleMapViewController.swift */; };
 		EB853DF908FAA61651D8F049 /* Pods_RadarStuffUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8FD1EB2EC98D7D8FFB9885 /* Pods_RadarStuffUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		B98924151F11D3170017DD40 /* example2.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = example2.kml; sourceTree = "<group>"; };
 		B98924171F11D5F90017DD40 /* KMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMLParser.swift; sourceTree = "<group>"; };
 		B98924191F11ECE90017DD40 /* example3.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = example3.kml; sourceTree = "<group>"; };
+		B989241B1F11F3620017DD40 /* GoogleMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMapViewController.swift; sourceTree = "<group>"; };
 		C5A7777D242730B28F0F578F /* Pods_RadarStuff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadarStuff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F669581BFBC94EC244B58846 /* Pods-RadarStuffTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadarStuffTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RadarStuffTests/Pods-RadarStuffTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +139,7 @@
 			children = (
 				B98924171F11D5F90017DD40 /* KMLParser.swift */,
 				B905DFBB1F11BA06001E8E0E /* ViewController.swift */,
+				B989241B1F11F3620017DD40 /* GoogleMapViewController.swift */,
 				B905DFBD1F11BA06001E8E0E /* Main.storyboard */,
 				B905DFE71F11BCE7001E8E0E /* Support Files */,
 			);
@@ -473,6 +476,7 @@
 			files = (
 				B905DFBC1F11BA06001E8E0E /* ViewController.swift in Sources */,
 				B98924181F11D5F90017DD40 /* KMLParser.swift in Sources */,
+				B989241C1F11F3620017DD40 /* GoogleMapViewController.swift in Sources */,
 				B905DFBA1F11BA06001E8E0E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

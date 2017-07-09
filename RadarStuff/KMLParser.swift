@@ -22,7 +22,7 @@
 
 import UIKit
 import MapKit
-
+import GoogleMaps
 /*
  Copyright (C) 2015 Apple Inc. All Rights Reserved.
  See LICENSE.txt for this sample’s licensing information
@@ -67,6 +67,7 @@ class KMLParser: NSObject, XMLParserDelegate {
     private var _styles: [String: KMLStyle] = [:]
     private var _placemarks: [KMLPlacemark] = []
 
+
     private var _placemark: KMLPlacemark?
     private var _style: KMLStyle?
 
@@ -104,6 +105,12 @@ class KMLParser: NSObject, XMLParserDelegate {
     // (as opposed to simply point annotations).
     var overlays: [MKOverlay] {
         return _placemarks.flatMap{$0.overlay}
+    }
+
+    var googleOverlays: [GMSOverlay] {
+        var overlays = [GMSOverlay]()
+        overlays.append(contentsOf: _placemarks.flatMap{$0.getGoogleOverlays()})
+        return overlays
     }
 
     // Return the list of KMLPlacemarks from the object graph that are simply
@@ -294,12 +301,12 @@ class KMLElement: NSObject {
 // at the top level of the KML document with identifiers or they may be
 // specified anonymously within a Geometry element.
 class KMLStyle: KMLElement {
-    private var strokeColor: UIColor?
-    private var strokeWidth: CGFloat = 0.0
-    private var fillColor: UIColor?
+    fileprivate var strokeColor: UIColor?
+    fileprivate var strokeWidth: CGFloat = 0.0
+    fileprivate var fillColor: UIColor?
 
-    private var fill: Bool = false
-    private var stroke: Bool = false
+    fileprivate var fill: Bool = false
+    fileprivate var stroke: Bool = false
 
     private struct Flags: OptionSet {
         var rawValue: Int32
@@ -312,6 +319,7 @@ class KMLStyle: KMLElement {
         static let inFill = Flags(rawValue: 1<<4)
         static let inOutline = Flags(rawValue: 1<<5)
     }
+
     private var flags: Flags = Flags(rawValue: 0)
 
     override var canAddString: Bool {
@@ -414,6 +422,10 @@ class KMLGeometry: KMLElement {
         return nil
     }
 
+    func getGoogleOverlays(withStyle style: KMLStyle?) -> [GMSOverlay]? {
+        return nil
+    }
+
     // Create (if necessary) and return the corresponding MKOverlayPathRenderer for
     // the MKShape object.
     func createOverlayPathRenderer(_ shape: MKShape) -> MKOverlayPathRenderer? {
@@ -443,6 +455,12 @@ class KMLPoint: KMLGeometry {
         annotation.coordinate = point
         return annotation
     }
+
+    override func getGoogleOverlays(withStyle style: KMLStyle?) -> [GMSOverlay]?{
+
+        return [GMSMarker(position: point)]
+    }
+    
 
     // KMLPoint does not override MKOverlayPathRenderer: because there is no such
     // thing as an overlay view for a point.  They use MKAnnotationViews which
@@ -520,13 +538,56 @@ class KMLPolygon: KMLGeometry {
         let poly = MKPolygon(coordinates: &coords, count: coords.count, interiorPolygons: innerPolys)
         return poly
     }
+    
+
+    override func getGoogleOverlays(withStyle style: KMLStyle?) -> [GMSOverlay]? {
+
+        var innerPolys: [GMSPolygon] = innerRings.map {coordStr in
+            let coords = CLLocationCoordinate2D.strToCoords(coordStr)
+            let path = GMSMutablePath()
+            for coordinate in coords{
+                path.add(coordinate)
+            }
+            let polygon = GMSPolygon(path: path)
+            addStyle(style: style, toPolygon: polygon)
+
+            return polygon
+        }
+
+        // Now parse the outer ring.
+        let coords = CLLocationCoordinate2D.strToCoords(outerRing)
+        let path = GMSMutablePath()
+        for coordinate in coords{
+            path.add(coordinate)
+        }
+
+        let polygon = GMSPolygon(path: path)
+        addStyle(style: style, toPolygon: polygon)
+        innerPolys.insert(polygon, at: 0)
+
+        return innerPolys
+    }
 
     override func createOverlayPathRenderer(_ shape: MKShape) -> MKOverlayPathRenderer? {
         let polyPath = MKPolygonRenderer(polygon: shape as! MKPolygon)
         return polyPath
     }
 
+    private func addStyle(style: KMLStyle?, toPolygon polygon: GMSPolygon){
+        if let fillColor = style?.fillColor{
+            polygon.fillColor = fillColor
+        }
+
+        if let strokeColor = style?.strokeColor{
+            polygon.strokeColor = strokeColor
+        }
+
+        if let strokeWidth = style?.strokeWidth{
+            polygon.strokeWidth = strokeWidth
+        }
+    }
 }
+
 
 class KMLLineString: KMLGeometry {
     var points: [CLLocationCoordinate2D] = []
@@ -542,6 +603,23 @@ class KMLLineString: KMLGeometry {
     override var mapkitShape: MKShape? {
         // KMLLineString corresponds to MKPolyline
         return MKPolyline(coordinates: &points, count: points.count)
+    }
+
+    override func getGoogleOverlays(withStyle style: KMLStyle?) -> [GMSOverlay]?{
+        let path = GMSMutablePath()
+        for point in points{
+            path.add(point)
+        }
+
+        let polyline = GMSPolyline(path: path)
+        if let strokeColor = style?.strokeColor{
+            polyline.strokeColor = strokeColor
+        }
+        if let strokeWidth = style?.strokeWidth{
+            polyline.strokeWidth = strokeWidth
+        }
+
+        return [polyline]
     }
 
     override func createOverlayPathRenderer(_ shape: MKShape) -> MKOverlayPathRenderer? {
@@ -563,7 +641,7 @@ class KMLPlacemark: KMLElement {
     var styleUrl: String?
 
     private var mkShape: MKShape?
-
+    private var googleOverlays: [GMSOverlay]!
     private var _annotationView: MKAnnotationView?
     private var _overlayPathRenderer: MKOverlayPathRenderer?
 
@@ -664,11 +742,20 @@ class KMLPlacemark: KMLElement {
         }
     }
 
+    private func createOverlayShape(){
+        googleOverlays = geometry?.getGoogleOverlays(withStyle: style)
+    }
+
     var overlay: MKOverlay? {
         self._createShape()
 
         return mkShape as? MKOverlay
 
+    }
+
+    func getGoogleOverlays() -> [GMSOverlay]{
+        self.createOverlayShape()
+        return googleOverlays
     }
 
     var point: MKAnnotation? {
