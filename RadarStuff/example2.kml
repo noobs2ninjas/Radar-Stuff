@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<Folder>
+  <name>TEST: GE animation of southmissvly Mosaic</name>
+  <description><![CDATA[
+Before animating, shrink time window in slider to minimum.
+Animation only works in latest GE beta 4.0 (after Sept 13, or 14 for Mac).
+Overlay shows NWS Radar Mosaic from the southmissvly 
+NOTE: This is experimental.
+]]></description>
+  <LookAt>
+    <longitude>-97.42858280415294</longitude>
+    <latitude>38.725277993598894</latitude>
+    <range>10000000</range>
+    <tilt>0</tilt>
+    <heading>0</heading>
+    <TimeSpan>
+    <begin>2017-07-09T00:58:00</begin>
+    <end>2017-07-09T01:08:00</end>
+    </TimeSpan>
+  </LookAt>
+  <TimeSpan>
+      <begin>2017-07-09T00:58:00</begin>
+      <end>2017-07-09T02:48:00</end>
+  </TimeSpan>
+  <Folder>
+    <name>frames</name>
+    <description>Animation frames NWS southmissvly sector</description>
+    <GroundOverlay>
+      <name>southmissvly - 00:58</name>
+      <description>southmissvly Mosaic</description>
+      <TimeSpan>
+	<begin>2017-07-09T00:58:00</begin>
+	<end>2017-07-09T01:08:00</end>
+      </TimeSpan>
+      <Icon>
+	<href>http://radar.weather.gov/Conus/RadarImg/southmissvly_20170709_0058_N0Ronly.gif</href>
+      </Icon>
+      <LatLonBox id="BBOX">
+	<south>24.34823384135</south>
+	<north>38.725277993598894</north>
+	<west>-97.42858280415294</west>
+	<east>-82.332686444292</east>
+	<rotation>0</rotation>
+      </LatLonBox>
+    </GroundOverlay>    <GroundOverlay>
+      <name>southmissvly - 01:08</name>
+      <description>southmissvly Mosaic</description>
+      <TimeSpan>
+	<begin>2017-07-09T01:08:00</begin>
+	<end>2017-07-09T01:18:00</end>
+      </TimeSpan>
+      <Icon>
+	<href>http://radar.weather.gov/Conus/RadarImg/southmissvly_20170709_0108_N0Ronly.gif</href>
+      </Icon>
+      <LatLonBox id="BBOX">
+	<south>24.34823384135</south>
+	<north>38.725277993598894</north>
+	<west>-97.42858280415294</west>
+	<east>-82.332686444292</east>
+	<rotation>0</rotation>
+      </LatLonBox>
+    </GroundOverlay>    <GroundOverlay>
+      <name>southmissvly - 01:18</name>
+      <description>southmissvly Mosaic</description>
+      <TimeSpan>
+	<begin>2017-07-09T01:18:00</begin>
+	<end>2017-07-09T01:28:00</end>
+      </TimeSpan>
+      <Icon>
+	<href>http://radar.weather.gov/Conus/RadarImg/southmissvly_20170709_0118_N0Ronly.gif</href>
+      </Icon>
+      <LatLonBox id="BBOX">
+	<south>24.34823384135</south>
+	<north>38.725277993598894</north>
+	<west>-97.42858280415294</west>
+	<east>-82.332686444292</east>
+	<rotation>0</rotation>
+      </LatLonBox>
+    </GroundOverlay>    <GroundOverlay>
+      <name>southmissvly - 01:28</name>
+      <description>southmissvly Mosaic</description>
+      <TimeSpan>
+	<begin>2017-07-09T01:28:00</begin>
+	<end>2017-07-09T01:38:00</end>
+      </TimeSpan>
+      <Icon>
+	<href>http://radar.weather.gov/Conus/RadarImg/southmissvly_20170709_0128_N0Ronly.gif</href>
+      </Icon>
+      <LatLonBox id="BBOX">
+	<south>24.34823384135</south>
+	<north>38.725277993598894</north>
+	<west>-97.42858280415294</west>
+	<east>-82.332686444292</east>
+	<rotation>0</rotation>
+      </LatLonBox>
+    </GroundOverlay>    <GroundOverlay>
+      <name>southmissvly - 01:38</name>
+      <description>southmissvly Mosaic</description>
+      <TimeSpan>
+	<begin>2017-07-09T01:38:00</begin>
+	<end>2017-07-09T01:48:00</end>
+      </TimeSpan>
+      <Icon>
+	<href>http://radar.weather.gov/Conus/RadarImg/southmissvly_20170709_0138_N0Ronly.gif</href>
+      </Icon>
+      <LatLonBox id="BBOX">
+	<south>24.34823384135</south>
+	<north>38.725277993598894</north>
+	<west>-97.42858280415294</west>
+	<east>-82.332686444292</east>
+	<rotation>0</rotation>
+      </LatLonBox>
+    </GroundOverlay>    <GroundOverlay>
+      <name>southmissvly - 01:48</name>
+      <description>southmissvly Mosaic</description>
+      <TimeSpan>
+	<begin>2017-07-09T01:48:00</begin>
+	<end>2017-07-09T01:58:00</end>
+      </TimeSpan>
+      <Icon>
+	<href>http://radar.weather.gov/Conus/RadarImg/southmissvly_20170709_0148_N0Ronly.gif</href>
+      </Icon>
+      <LatLonBox id="BBOX">
+	<south>24.34823384135</south>
+	<north>38.725277993598894</north>
+	<west>-97.42858280415294</west>
+	<east>-82.332686444292</east>
+	<rotation>0</rotation>
+      </LatLonBox>
+    </GroundOverlay>    <GroundOverlay>
+      <name>southmissvly - 01:58</name>
+      <description>southmissvly Mosaic</description>
+      <TimeSpan>
+	<begin>2017-07-09T01:58:00</begin>
+	<end>2017-07-09T02:08:00</end>
+      </TimeSpan>
+      <Icon>
+	<href>http://radar.weather.gov/Conus/RadarImg/southmissvly_20170709_0158_N0Ronly.gif</href>
+      </Icon>
+      <LatLonBox id="BBOX">
+	<south>24.34823384135</south>
+	<north>38.725277993598894</north>
+	<west>-97.42858280415294</west>
+	<east>-82.332686444292</east>
+	<rotation>0</rotation>
+      </LatLonBox>
+    </GroundOverlay>    <GroundOverlay>
+      <name>southmissvly - 02:08</name>
+      <description>southmissvly Mosaic</description>
+      <TimeSpan>
+	<begin>2017-07-09T02:08:00</begin>
+	<end>2017-07-09T02:18:00</end>
+      </TimeSpan>
+      <Icon>
+	<href>http://radar.weather.gov/Conus/RadarImg/southmissvly_20170709_0208_N0Ronly.gif</href>
+      </Icon>
+      <LatLonBox id="BBOX">
+	<south>24.34823384135</south>
+	<north>38.725277993598894</north>
+	<west>-97.42858280415294</west>
+	<east>-82.332686444292</east>
+	<rotation>0</rotation>
+      </LatLonBox>
+    </GroundOverlay>    <GroundOverlay>
+      <name>southmissvly - 02:18</name>
+      <description>southmissvly Mosaic</description>
+      <TimeSpan>
+	<begin>2017-07-09T02:18:00</begin>
+	<end>2017-07-09T02:28:00</end>
+      </TimeSpan>
+      <Icon>
+	<href>http://radar.weather.gov/Conus/RadarImg/southmissvly_20170709_0218_N0Ronly.gif</href>
+      </Icon>
+      <LatLonBox id="BBOX">
+	<south>24.34823384135</south>
+	<north>38.725277993598894</north>
+	<west>-97.42858280415294</west>
+	<east>-82.332686444292</east>
+	<rotation>0</rotation>
+      </LatLonBox>
+    </GroundOverlay>    <GroundOverlay>
+      <name>southmissvly - 02:28</name>
+      <description>southmissvly Mosaic</description>
+      <TimeSpan>
+	<begin>2017-07-09T02:28:00</begin>
+	<end>2017-07-09T02:48:00</end>
+      </TimeSpan>
+      <Icon>
+	<href>http://radar.weather.gov/Conus/RadarImg/southmissvly_20170709_0228_N0Ronly.gif</href>
+      </Icon>
+      <LatLonBox id="BBOX">
+	<south>24.34823384135</south>
+	<north>38.725277993598894</north>
+	<west>-97.42858280415294</west>
+	<east>-82.332686444292</east>
+	<rotation>0</rotation>
+      </LatLonBox>
+    </GroundOverlay></Folder>
+</Folder>
+</kml>

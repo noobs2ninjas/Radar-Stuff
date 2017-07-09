@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35763640D88FD01E9FDC2CD7 /* Pods_RadarStuffTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E473B822AB8BEE7632B892 /* Pods_RadarStuffTests.framework */; };
+		A45A94A6FC6FA2F811C76396 /* Pods_RadarStuff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5A7777D242730B28F0F578F /* Pods_RadarStuff.framework */; };
 		B905DFBA1F11BA06001E8E0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B905DFB91F11BA06001E8E0E /* AppDelegate.swift */; };
 		B905DFBC1F11BA06001E8E0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B905DFBB1F11BA06001E8E0E /* ViewController.swift */; };
 		B905DFBF1F11BA06001E8E0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B905DFBD1F11BA06001E8E0E /* Main.storyboard */; };
@@ -14,6 +16,11 @@
 		B905DFC41F11BA06001E8E0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B905DFC21F11BA06001E8E0E /* LaunchScreen.storyboard */; };
 		B905DFCF1F11BA06001E8E0E /* RadarStuffTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B905DFCE1F11BA06001E8E0E /* RadarStuffTests.swift */; };
 		B905DFDA1F11BA06001E8E0E /* RadarStuffUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B905DFD91F11BA06001E8E0E /* RadarStuffUITests.swift */; };
+		B98924141F11CAA80017DD40 /* example.kml in Resources */ = {isa = PBXBuildFile; fileRef = B98924131F11CAA80017DD40 /* example.kml */; };
+		B98924161F11D3170017DD40 /* example2.kml in Resources */ = {isa = PBXBuildFile; fileRef = B98924151F11D3170017DD40 /* example2.kml */; };
+		B98924181F11D5F90017DD40 /* KMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98924171F11D5F90017DD40 /* KMLParser.swift */; };
+		B989241A1F11ECE90017DD40 /* example3.kml in Resources */ = {isa = PBXBuildFile; fileRef = B98924191F11ECE90017DD40 /* example3.kml */; };
+		EB853DF908FAA61651D8F049 /* Pods_RadarStuffUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8FD1EB2EC98D7D8FFB9885 /* Pods_RadarStuffUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05706E94F3CD9B6499A2C744 /* Pods-RadarStuffUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadarStuffUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RadarStuffUITests/Pods-RadarStuffUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		111ED8004238430358516E23 /* Pods-RadarStuffTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadarStuffTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RadarStuffTests/Pods-RadarStuffTests.release.xcconfig"; sourceTree = "<group>"; };
+		73E473B822AB8BEE7632B892 /* Pods_RadarStuffTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadarStuffTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E8FD1EB2EC98D7D8FFB9885 /* Pods_RadarStuffUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadarStuffUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91F46E0045A9BEA095AEE5B5 /* Pods-RadarStuffUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadarStuffUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RadarStuffUITests/Pods-RadarStuffUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9946A089ACBC6B1159458A5D /* Pods-RadarStuff.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadarStuff.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RadarStuff/Pods-RadarStuff.debug.xcconfig"; sourceTree = "<group>"; };
+		A11A91ABB691EAC053EE428A /* Pods-RadarStuff.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadarStuff.release.xcconfig"; path = "Pods/Target Support Files/Pods-RadarStuff/Pods-RadarStuff.release.xcconfig"; sourceTree = "<group>"; };
 		B905DFB61F11BA06001E8E0E /* RadarStuff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadarStuff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B905DFB91F11BA06001E8E0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B905DFBB1F11BA06001E8E0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +61,12 @@
 		B905DFD51F11BA06001E8E0E /* RadarStuffUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadarStuffUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B905DFD91F11BA06001E8E0E /* RadarStuffUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarStuffUITests.swift; sourceTree = "<group>"; };
 		B905DFDB1F11BA06001E8E0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B98924131F11CAA80017DD40 /* example.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = example.kml; sourceTree = "<group>"; };
+		B98924151F11D3170017DD40 /* example2.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = example2.kml; sourceTree = "<group>"; };
+		B98924171F11D5F90017DD40 /* KMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMLParser.swift; sourceTree = "<group>"; };
+		B98924191F11ECE90017DD40 /* example3.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = example3.kml; sourceTree = "<group>"; };
+		C5A7777D242730B28F0F578F /* Pods_RadarStuff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadarStuff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F669581BFBC94EC244B58846 /* Pods-RadarStuffTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadarStuffTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RadarStuffTests/Pods-RadarStuffTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A45A94A6FC6FA2F811C76396 /* Pods_RadarStuff.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35763640D88FD01E9FDC2CD7 /* Pods_RadarStuffTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +90,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB853DF908FAA61651D8F049 /* Pods_RadarStuffUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70D5C17D3EF70D574C36D286 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9946A089ACBC6B1159458A5D /* Pods-RadarStuff.debug.xcconfig */,
+				A11A91ABB691EAC053EE428A /* Pods-RadarStuff.release.xcconfig */,
+				F669581BFBC94EC244B58846 /* Pods-RadarStuffTests.debug.xcconfig */,
+				111ED8004238430358516E23 /* Pods-RadarStuffTests.release.xcconfig */,
+				05706E94F3CD9B6499A2C744 /* Pods-RadarStuffUITests.debug.xcconfig */,
+				91F46E0045A9BEA095AEE5B5 /* Pods-RadarStuffUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B905DFAD1F11BA06001E8E0E = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +117,8 @@
 				B905DFCD1F11BA06001E8E0E /* RadarStuffTests */,
 				B905DFD81F11BA06001E8E0E /* RadarStuffUITests */,
 				B905DFB71F11BA06001E8E0E /* Products */,
+				70D5C17D3EF70D574C36D286 /* Pods */,
+				F0C8C9FBA4A2836ABF15A714 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +135,10 @@
 		B905DFB81F11BA06001E8E0E /* RadarStuff */ = {
 			isa = PBXGroup;
 			children = (
-				B905DFB91F11BA06001E8E0E /* AppDelegate.swift */,
+				B98924171F11D5F90017DD40 /* KMLParser.swift */,
 				B905DFBB1F11BA06001E8E0E /* ViewController.swift */,
 				B905DFBD1F11BA06001E8E0E /* Main.storyboard */,
-				B905DFC01F11BA06001E8E0E /* Assets.xcassets */,
-				B905DFC21F11BA06001E8E0E /* LaunchScreen.storyboard */,
-				B905DFC51F11BA06001E8E0E /* Info.plist */,
+				B905DFE71F11BCE7001E8E0E /* Support Files */,
 			);
 			path = RadarStuff;
 			sourceTree = "<group>";
@@ -125,6 +161,30 @@
 			path = RadarStuffUITests;
 			sourceTree = "<group>";
 		};
+		B905DFE71F11BCE7001E8E0E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B98924191F11ECE90017DD40 /* example3.kml */,
+				B98924131F11CAA80017DD40 /* example.kml */,
+				B98924151F11D3170017DD40 /* example2.kml */,
+				B905DFB91F11BA06001E8E0E /* AppDelegate.swift */,
+				B905DFC01F11BA06001E8E0E /* Assets.xcassets */,
+				B905DFC21F11BA06001E8E0E /* LaunchScreen.storyboard */,
+				B905DFC51F11BA06001E8E0E /* Info.plist */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		F0C8C9FBA4A2836ABF15A714 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5A7777D242730B28F0F578F /* Pods_RadarStuff.framework */,
+				73E473B822AB8BEE7632B892 /* Pods_RadarStuffTests.framework */,
+				7E8FD1EB2EC98D7D8FFB9885 /* Pods_RadarStuffUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B905DFDE1F11BA06001E8E0E /* Build configuration list for PBXNativeTarget "RadarStuff" */;
 			buildPhases = (
+				B0382E966759C49785569EF8 /* [CP] Check Pods Manifest.lock */,
 				B905DFB21F11BA06001E8E0E /* Sources */,
 				B905DFB31F11BA06001E8E0E /* Frameworks */,
 				B905DFB41F11BA06001E8E0E /* Resources */,
+				0BF2F87375370AEC576AE019 /* [CP] Embed Pods Frameworks */,
+				7C56AC06827770E6A8D76C1C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +212,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B905DFE11F11BA06001E8E0E /* Build configuration list for PBXNativeTarget "RadarStuffTests" */;
 			buildPhases = (
+				B16FF9CD1CB113B54D1CC862 /* [CP] Check Pods Manifest.lock */,
 				B905DFC61F11BA06001E8E0E /* Sources */,
 				B905DFC71F11BA06001E8E0E /* Frameworks */,
 				B905DFC81F11BA06001E8E0E /* Resources */,
+				44411FA603DB2FAB908389D6 /* [CP] Embed Pods Frameworks */,
+				DFB468A973D50622F219429C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +233,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B905DFE41F11BA06001E8E0E /* Build configuration list for PBXNativeTarget "RadarStuffUITests" */;
 			buildPhases = (
+				1C85C4681663D361DA6FB686 /* [CP] Check Pods Manifest.lock */,
 				B905DFD11F11BA06001E8E0E /* Sources */,
 				B905DFD21F11BA06001E8E0E /* Frameworks */,
 				B905DFD31F11BA06001E8E0E /* Resources */,
+				C537FE195A215C34B15C359C /* [CP] Embed Pods Frameworks */,
+				2BA270A871B5DF727F665DE6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +262,8 @@
 				TargetAttributes = {
 					B905DFB51F11BA06001E8E0E = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4JG3A7PLF6;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					B905DFC91F11BA06001E8E0E = {
@@ -232,6 +303,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B98924161F11D3170017DD40 /* example2.kml in Resources */,
+				B989241A1F11ECE90017DD40 /* example3.kml in Resources */,
+				B98924141F11CAA80017DD40 /* example.kml in Resources */,
 				B905DFC41F11BA06001E8E0E /* LaunchScreen.storyboard in Resources */,
 				B905DFC11F11BA06001E8E0E /* Assets.xcassets in Resources */,
 				B905DFBF1F11BA06001E8E0E /* Main.storyboard in Resources */,
@@ -254,12 +328,151 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0BF2F87375370AEC576AE019 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RadarStuff/Pods-RadarStuff-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C85C4681663D361DA6FB686 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2BA270A871B5DF727F665DE6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RadarStuffUITests/Pods-RadarStuffUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44411FA603DB2FAB908389D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RadarStuffTests/Pods-RadarStuffTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C56AC06827770E6A8D76C1C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RadarStuff/Pods-RadarStuff-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0382E966759C49785569EF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B16FF9CD1CB113B54D1CC862 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C537FE195A215C34B15C359C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RadarStuffUITests/Pods-RadarStuffUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFB468A973D50622F219429C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RadarStuffTests/Pods-RadarStuffTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B905DFB21F11BA06001E8E0E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B905DFBC1F11BA06001E8E0E /* ViewController.swift in Sources */,
+				B98924181F11D5F90017DD40 /* KMLParser.swift in Sources */,
 				B905DFBA1F11BA06001E8E0E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,30 +625,40 @@
 		};
 		B905DFDF1F11BA06001E8E0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9946A089ACBC6B1159458A5D /* Pods-RadarStuff.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 4JG3A7PLF6;
 				INFOPLIST_FILE = RadarStuff/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nate.RadarStuff;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		B905DFE01F11BA06001E8E0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A11A91ABB691EAC053EE428A /* Pods-RadarStuff.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 4JG3A7PLF6;
 				INFOPLIST_FILE = RadarStuff/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nate.RadarStuff;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		B905DFE21F11BA06001E8E0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F669581BFBC94EC244B58846 /* Pods-RadarStuffTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -450,6 +673,7 @@
 		};
 		B905DFE31F11BA06001E8E0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 111ED8004238430358516E23 /* Pods-RadarStuffTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -464,6 +688,7 @@
 		};
 		B905DFE51F11BA06001E8E0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05706E94F3CD9B6499A2C744 /* Pods-RadarStuffUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = RadarStuffUITests/Info.plist;
@@ -477,6 +702,7 @@
 		};
 		B905DFE61F11BA06001E8E0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91F46E0045A9BEA095AEE5B5 /* Pods-RadarStuffUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = RadarStuffUITests/Info.plist;
@@ -507,6 +733,7 @@
 				B905DFE01F11BA06001E8E0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B905DFE11F11BA06001E8E0E /* Build configuration list for PBXNativeTarget "RadarStuffTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +742,7 @@
 				B905DFE31F11BA06001E8E0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B905DFE41F11BA06001E8E0E /* Build configuration list for PBXNativeTarget "RadarStuffUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +751,7 @@
 				B905DFE61F11BA06001E8E0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
